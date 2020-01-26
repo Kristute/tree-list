@@ -1,0 +1,122 @@
+$headerHeight: 5.5rem;
+.header {
+    height: $headerHeight;
+    background: white;
+    text-align: left;
+
+    &--fixed {
+         top: 0;
+         position: fixed;
+         width: 100%;
+     }
+}
+
+.header__title {
+    margin: 2rem auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 80%;
+}
+
+.refresh {
+    display: inline-block;
+    background: url(./images/refresh.svg) no-repeat;
+    background-size: contain;
+    float: right;
+    width: 15px;
+    height: 15px;
+    margin: 0 10px;
+}
+
+.more {
+    display: inline-block;
+    background: url(./images/more.svg) no-repeat;
+    background-size: contain;
+    float: right;
+    width: 15px;
+    height: 15px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+    margin-top: $headerHeight;
+}
+
+.list__item {
+    text-align: left;
+    list-style: none;
+}
+
+.list__title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1rem 0.5rem;
+}
+
+.list__newItem {
+    width: 90%;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1px solid darkgray;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.folder {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 10px;
+}
+
+.folder-closed {
+    background: url(./images/folder.svg) no-repeat;
+    background-size: contain;
+}
+
+.folder-opened {
+    background: url(./images/folder-opened.svg) no-repeat;
+    background-size: contain;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+    &--show {
+        display: block;
+    }
+}
+
+.dropdown__item {
+    color: black;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+    display: block;
+
+    &:hover {
+        background-color: #ddd;
+    }
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    border: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #3369ff;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #213f85;
+    }
+}
